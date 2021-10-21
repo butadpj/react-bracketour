@@ -1,13 +1,24 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+
+:root {
+  --dark:rgb(36, 35, 35);
+  --dark-1:rgb(66, 65, 65);
+  --light: rgb(236, 236, 236);
+  --light-1: rgb(167, 166, 166);
+  --primary: rgb(231, 99, 46);
+  --danger: rgb(231, 46, 46);
+  --success: rgb(98, 231, 46);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  background-color: var(--dark);
+  color: var(--light);
+  font-family: 'Oxygen', Arial, sans-serif;
+}
+
+h4, h5, h6 {
+  font-family: 'Cairo';
 }
