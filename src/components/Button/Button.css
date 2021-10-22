@@ -1,0 +1,35 @@
+.btn {
+  padding: 0.8rem 2rem;
+  border: none;
+  background: var(--primary);
+  border-radius: 5px;
+  font-weight: 800;
+  font-family: 'Cairo';
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+  z-index: 1;
+}
+
+.btn:hover {
+  filter: brightness(120%);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.20);
+}
+
+.btn--outline {
+  background: transparent;
+  border: 1px solid var(--dark-1);
+}
+
+.btn--outline:hover {
+  background: var(--dark-1);
+}
+
+.btn.disabled {
+  cursor: not-allowed;
+  filter: brightness(50%);
+}
+
+.btn.disabled:hover {
+  filter: brightness(50%);
+}

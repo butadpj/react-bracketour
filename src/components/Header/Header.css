@@ -1,0 +1,15 @@
+header {
+  position: absolute;
+  top: 5%;
+  text-align: center;
+  animation: fadeOut 1s ease-out 2s forwards;
+}
+
+.main__title {
+  margin-bottom: 1rem;
+}
+
+.sub__title {
+  font-style: italic;
+  letter-spacing: 1px;
+}

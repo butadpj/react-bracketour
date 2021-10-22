@@ -1,0 +1,10 @@
+.participant-form {
+  display: flex;
+  flex-flow: column;
+  margin-top: 8rem;
+}
+
+.participant-form .submit__btn {
+  align-self: center;
+  margin-top: 2rem;
+}
