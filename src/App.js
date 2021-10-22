@@ -157,7 +157,7 @@ const App = () => {
     setInputStatus(null);
   }, [participantsInput]);
 
-  // Check for a final winner
+  // Check for a final winner and hover feature
   React.useEffect(() => {
     let timeOutId;
     if (tournamentState.length) {
@@ -170,6 +170,56 @@ const App = () => {
           alert(`The winnner of this tournament is: ${winnerName}`);
         }, 200);
       }
+
+      bracketsRef.current.addEventListener('mouseover', (e) => {
+        handleMouseOver(e);
+      });
+
+      bracketsRef.current.addEventListener('mouseout', (e) => {
+        handleMouseOut(e);
+      });
+
+      const handleMouseOver = (e) => {
+        if (e.target.classList.contains('player')) {
+          const matchedPlayers = getMatchedPlayers(e.target);
+
+          matchedPlayers((player) => {
+            makePlayerGlow(player);
+          });
+        }
+
+        if (
+          e.target.classList.contains('player__name') ||
+          e.target.classList.contains('player__score')
+        ) {
+          const matchedPlayers = getMatchedPlayers(e.target.closest('.player'));
+
+          matchedPlayers((player) => {
+            makePlayerGlow(player);
+          });
+        }
+      };
+
+      const handleMouseOut = (e) => {
+        if (e.target.classList.contains('player')) {
+          const matchedPlayers = getMatchedPlayers(e.target);
+
+          matchedPlayers((player) => {
+            removePlayerGlow(player);
+          });
+        }
+
+        if (
+          e.target.classList.contains('player__name') ||
+          e.target.classList.contains('player__score')
+        ) {
+          const matchedPlayers = getMatchedPlayers(e.target.closest('.player'));
+
+          matchedPlayers((player) => {
+            removePlayerGlow(player);
+          });
+        }
+      };
     }
 
     return () => {
