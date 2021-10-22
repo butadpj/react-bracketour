@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/react-bracketour/static/css/main.8c382671.chunk.css",
+    "main.js": "/react-bracketour/static/js/main.059fe6ea.chunk.js",
+    "main.js.map": "/react-bracketour/static/js/main.059fe6ea.chunk.js.map",
+    "runtime-main.js": "/react-bracketour/static/js/runtime-main.c91e2c57.js",
+    "runtime-main.js.map": "/react-bracketour/static/js/runtime-main.c91e2c57.js.map",
+    "static/js/2.805e74ff.chunk.js": "/react-bracketour/static/js/2.805e74ff.chunk.js",
+    "static/js/2.805e74ff.chunk.js.map": "/react-bracketour/static/js/2.805e74ff.chunk.js.map",
+    "index.html": "/react-bracketour/index.html",
+    "static/css/main.8c382671.chunk.css.map": "/react-bracketour/static/css/main.8c382671.chunk.css.map",
+    "static/js/2.805e74ff.chunk.js.LICENSE.txt": "/react-bracketour/static/js/2.805e74ff.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c91e2c57.js",
+    "static/js/2.805e74ff.chunk.js",
+    "static/css/main.8c382671.chunk.css",
+    "static/js/main.059fe6ea.chunk.js"
+  ]
+}
